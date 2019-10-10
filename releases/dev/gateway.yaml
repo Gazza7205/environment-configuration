@@ -34,7 +34,7 @@ spec:
       registry: "docker.brcmlabs.com"                                   # Registry name, e.g docker.cluster1.example.com
       username: "admin"                               # Registry username, e.g dockerUser
     hazelcast:
-      enabled: false
+      enabled: true
     service:
       ports:
       - name: http
