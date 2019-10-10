@@ -97,7 +97,7 @@ function encrypt_private_key () {
 OUT="$(mktemp)"
 echo "gateway:" >> "$OUT"
 echo "  env:" >> "$OUT"
-echo "    ENV.CONTEXT_VARIABLE_PROPERTY.influxdb.influxdb: \"apim-service-metrics-runtime-influxdb.default\"" >> "$OUT"
+#echo "    ENV.CONTEXT_VARIABLE_PROPERTY.influxdb.influxdb: \"apim-service-metrics-runtime-influxdb.default\"" >> "$OUT"
 echo "    ENV.CONTEXT_VARIABLE_PROPERTY.influxdb.tags: \"env=$namespace\"" >> "$OUT"
 
 # Remove private key related secrets
