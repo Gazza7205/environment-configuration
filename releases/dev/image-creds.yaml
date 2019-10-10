@@ -1,0 +1,16 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: image-creds
+  namespace: dev
+spec:
+  encryptedData:
+    image-creds.yaml: AgAcU9yrWYBfjJbnIuxAXkaL2VLpMIPK6edBwgHKOQgC/OGCkIh8vxFeIIIxNdWUWneUKX7W8YCrYsuR+L6WqWkH6NifM0DPchgiUxK7nehVZzc8HAwF1JW/tTBYbx1DnTwQCZP9wLpb1b650zgdv5y4Lj4Rmg0kL6dtmO45RHmtf0Ihl3z6D6fK5XpF+FNFBH0F07G1iAEnpoLC1cJXoyjgNDw58U2jvb+0saePDCdfZUm1pjIDHdX8Ara/l/KZHLwdMPJn+cO111UNOxtncgbtxJOIKBdbrFSdvZLNHn1GjLic8X/SiCC9UoRVY3y0vUMC5NCdzFguvwgrAcajDiDqdyYywBT/cCF1W0AXjwu+NGQaneIZiuSCo92EWXV2d6VnIiKvFoOsNBCfoy+19yKdfiAtCDeoIgnhhypxqFSFfQV5+gqRVhsrFXEghn6fz0pr78ESScpqAw1zcCYxWtX7H7owZNBpjJ/IUiG/ZqOgORbdRF+1QbKm0BmaZphCYUsYbHW2aHtb+O9DX95PkfVNMI0vsntAsZPQawDf/3z+P/glrFPR8BH95Pyr0JHTqp35vaR24WLgFTSgz5eeIalt8PDssu0xBOC/h7pjYHKKLS4moco0axtPhfBjXylpe/S8YFgDk1zz71xrCnmAZHZkiEGeJLtfd/NpRfoMk6heQUqBk0MwPIctuvm8J5AQRhUn9x9DklxPSQ7F04eh8+IQda4uucnArcZ1KN8zUL8+ybKqn8I4cq9c/uXa
+  template:
+    metadata:
+      creationTimestamp: null
+      name: image-creds
+      namespace: dev
+status: {}
+
