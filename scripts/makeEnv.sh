@@ -98,6 +98,8 @@ OUT="$(mktemp)"
 echo "gateway:" >> "$OUT"
 echo "  env:" >> "$OUT"
 #echo "    ENV.CONTEXT_VARIABLE_PROPERTY.influxdb.influxdb: \"apim-service-metrics-runtime-influxdb.default\"" >> "$OUT"
+echo "    SSG_ADMIN_USERNAME: \"admin"\" >> "$OUT"
+echo "    SSG_ADMIN_PASSWORD: \"CAdemo123"\" >> "$OUT"
 echo "    ENV.CONTEXT_VARIABLE_PROPERTY.influxdb.tags: \"env=$namespace\"" >> "$OUT"
 
 # Remove private key related secrets
