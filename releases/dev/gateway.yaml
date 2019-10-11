@@ -31,8 +31,8 @@ spec:
       tag: '10'                                               # Image tag version, e.g 1.0
     imageCredentials:
       name: "nexus-cicd"                               # Image credential name, e.g gateway.name-example01
-      registry: "docker.brcmlabs.com"                                   # Registry name, e.g docker.cluster1.example.com
-      username: "admin"                               # Registry username, e.g dockerUser
+      registry: "https://docker.brcmlabs.com/v2/"                                  # Registry name, e.g docker.cluster1.example.com
+      username: "admin"                             # Registry username, e.g dockerUser
     hazelcast:
       enabled: true
     service:
