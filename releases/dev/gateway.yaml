@@ -28,11 +28,11 @@ spec:
     replicaCount: 1
     container:
       image: docker.brcmlabs.com/repository/docker-hosted/gateway                                 # Repository name, e.g docker.cluster1.example.com/repository/docker-hosted/gateway
-      tag: '10'                                                # Image tag version, e.g 1.0
+      tag: '10'                                               # Image tag version, e.g 1.0
     imageCredentials:
       name: "nexus-cicd"                               # Image credential name, e.g gateway.name-example01
-      registry: "https://docker.brcmlabs.com/v2/"                                  # Registry name, e.g docker.cluster1.example.com
-      username: "admin"                             # Registry username, e.g dockerUser
+      registry: "docker.brcmlabs.com"                                   # Registry name, e.g docker.cluster1.example.com
+      username: "admin"                               # Registry username, e.g dockerUser
     hazelcast:
       enabled: true
     service:
