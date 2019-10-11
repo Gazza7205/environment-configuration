@@ -28,7 +28,7 @@ spec:
     replicaCount: 1
     container:
       image: docker.brcmlabs.com/repository/docker-hosted/gateway
-      tag: '13'
+      tag: '14'
     imageCredentials:
       name: "nexus-cicd"
       registry: "docker.brcmlabs.com"
