@@ -34,7 +34,7 @@ spec:
       registry: "docker.brcmlabs.com"
       username: "admin"
     hazelcast:
-      enabled: true
+      enabled: false
     service:
       ports:
       - name: http
