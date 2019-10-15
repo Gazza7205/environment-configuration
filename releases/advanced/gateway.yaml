@@ -5,7 +5,7 @@ metadata:
   name: gateway-advanced
   namespace: advanced
   annotations:
-    flux.weave.works/automated: "false"
+    flux.weave.works/automated: "true"
     flux.weave.works/tag.container: semver:*
 spec:
   releaseName: gateway-advanced
@@ -25,7 +25,7 @@ spec:
       name: env
       key: env.yaml
   values:
-    replicaCount: 3
+    replicaCount: 0
     container:
       image: docker.brcmlabs.com/repository/docker-hosted/gatewayadvanced
       tag: '23'
@@ -34,7 +34,7 @@ spec:
       registry: "docker.brcmlabs.com"
       username: "admin"
     hazelcast:
-      enabled: true
+      enabled: false
       replicaCount: 2
     service:
       ports:
