@@ -8,7 +8,7 @@ metadata:
     flux.weave.works/automated: "false"
     flux.weave.works/tag.container: semver:*
 spec:
-  releaseName: gateway-dev
+  releaseName: gateway-advanced
   forceUpgrade: true
   chart:
     git: git@github.com:gazza7205/gateway-helm-charts
@@ -27,8 +27,8 @@ spec:
   values:
     replicaCount: 3
     container:
-      image: docker.brcmlabs.com/repository/docker-hosted/gateway-advanced
-      tag: '14'
+      image: docker.brcmlabs.com/repository/docker-hosted/gatewayadvanced
+      tag: '23'
     imageCredentials:
       name: "nexus-cicd"
       registry: "docker.brcmlabs.com"
