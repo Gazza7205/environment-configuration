@@ -25,9 +25,9 @@ spec:
       name: env
       key: env.yaml
   values:
-    replicaCount: 1
+    replicaCount: 2
     container:
-      image: docker.brcmlabs.com/repository/docker-hosted/gateway
+      image: docker.brcmlabs.com/repository/docker-hosted/gateway-dev
       tag: '14'
     imageCredentials:
       name: "nexus-cicd"
@@ -35,6 +35,7 @@ spec:
       username: "admin"
     hazelcast:
       enabled: true
+      replicaCount: 2
     service:
       ports:
       - name: http

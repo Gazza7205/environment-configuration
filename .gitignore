@@ -22,6 +22,16 @@
 # Local
 *.DS_Store
 
-scripts/*
-!scripts/*.sh
-!scripts/*.md
+test-scripts/*
+!test-scripts/*.sh
+!test-scripts/*.md
+
+dev-scripts/*
+!dev-scripts/*.sh
+!dev-scripts/*.md
+
+advanced-scripts/*
+!advanced-scripts/*.sh
+!advanced-scripts/*.md
+
+licenses/*

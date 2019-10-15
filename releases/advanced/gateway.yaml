@@ -2,10 +2,10 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: gateway-test
-  namespace: test
+  name: gateway-advanced
+  namespace: advanced
   annotations:
-    flux.weave.works/automated: "true"
+    flux.weave.works/automated: "false"
     flux.weave.works/tag.container: semver:*
 spec:
   releaseName: gateway-dev
@@ -25,16 +25,16 @@ spec:
       name: env
       key: env.yaml
   values:
-    replicaCount: 1
+    replicaCount: 3
     container:
-      image: docker.brcmlabs.com/repository/docker-hosted/gateway-test
+      image: docker.brcmlabs.com/repository/docker-hosted/gateway-advanced
       tag: '14'
     imageCredentials:
       name: "nexus-cicd"
       registry: "docker.brcmlabs.com"
       username: "admin"
     hazelcast:
-      enabled: false
+      enabled: true
       replicaCount: 2
     service:
       ports:
