@@ -35,7 +35,6 @@ spec:
       username: "admin"
     hazelcast:
       enabled: true
-      replicaCount: 2
     service:
       ports:
       - name: http
