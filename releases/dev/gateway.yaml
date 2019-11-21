@@ -27,12 +27,12 @@ spec:
   values:
     replicaCount: 2
     container:
-      image: docker.brcmlabs.com/repository/docker-hosted/gatewaydev
-      tag: '8'
+      image: docker.brcmlabs.com/gateway
+      tag: '1'
     imageCredentials:
-      name: "nexus-cicd"
+      name: "docker-registry"
       registry: "docker.brcmlabs.com"
-      username: "admin"
+      username: "gv666792"
     hazelcast:
       enabled: true
     service:

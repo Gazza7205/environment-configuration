@@ -2,13 +2,13 @@
 apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
-  name: gateway-advanced
-  namespace: advanced
+  name: gateway-production
+  namespace: production
   annotations:
     flux.weave.works/automated: "true"
     flux.weave.works/tag.container: semver:*
 spec:
-  releaseName: gateway-advanced
+  releaseName: gateway-production
   forceUpgrade: true
   chart:
     git: git@github.com:gazza7205/gateway-helm-charts
@@ -25,17 +25,16 @@ spec:
       name: env
       key: env.yaml
   values:
-    replicaCount: 0
+    replicaCount: 2
     container:
-      image: docker.brcmlabs.com/repository/docker-hosted/gatewayadvanced
-      tag: '23'
+      image: docker.brcmlabs.com/gateway
+      tag: '1'
     imageCredentials:
-      name: "nexus-cicd"
+      name: "docker-registry"
       registry: "docker.brcmlabs.com"
-      username: "admin"
+      username: "gv666792"
     hazelcast:
-      enabled: false
-      replicaCount: 2
+      enabled: true
     service:
       ports:
       - name: http

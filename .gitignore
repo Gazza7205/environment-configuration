@@ -30,8 +30,8 @@ dev-scripts/*
 !dev-scripts/*.sh
 !dev-scripts/*.md
 
-advanced-scripts/*
-!advanced-scripts/*.sh
-!advanced-scripts/*.md
+production-scripts/*
+!production-scripts/*.sh
+!production-scripts/*.md
 
 licenses/*
