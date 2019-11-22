@@ -27,8 +27,8 @@ spec:
   values:
     replicaCount: 1
     container:
-      image: docker.brcmlabs.com/gateway
-      tag: '5'
+      image: docker.brcmlabs.com/gateway-test
+      tag: '76'
     imageCredentials:
       name: "docker-registry"
       registry: "docker.brcmlabs.com"
