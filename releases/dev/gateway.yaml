@@ -25,10 +25,10 @@ spec:
       name: env
       key: env.yaml
   values:
-    replicaCount: 2
+    replicaCount: 1
     container:
-      image: docker.brcmlabs.com/gateway
-      tag: '7'
+      image: docker.brcmlabs.com/gateway-dev
+      tag: '1'
     imageCredentials:
       name: "docker-registry"
       registry: "docker.brcmlabs.com"
