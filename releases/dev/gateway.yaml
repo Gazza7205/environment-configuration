@@ -36,7 +36,7 @@ spec:
     hazelcast:
       enabled: true
     service:
-      type: ClusterIP
+      type: NodePort
       ports:
       - name: http
         internal: 8080
