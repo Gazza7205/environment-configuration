@@ -10,7 +10,7 @@ spec:
   releaseName: gateway-dev
   forceUpgrade: true
   chart:
-    git: git@github.com:gazza7205/gateway-helm-charts
+    git: git@github.com/CAAPIM/gateway-helm-charts.git
     path: charts/gateway
     ref: master
   valuesFrom:
