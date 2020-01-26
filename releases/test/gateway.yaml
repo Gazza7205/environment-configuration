@@ -5,8 +5,8 @@ metadata:
   name: gateway-test
   namespace: test
   annotations:
-    flux.weave.works/automated: "true"
-    flux.weave.works/tag.container: semver:*
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.app: semver:*
 spec:
   releaseName: gateway-test
   forceUpgrade: true
