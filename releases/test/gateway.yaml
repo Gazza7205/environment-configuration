@@ -6,7 +6,6 @@ metadata:
   namespace: test
   annotations:
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.app: semver:*
 spec:
   releaseName: gateway-test
   forceUpgrade: true
