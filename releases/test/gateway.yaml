@@ -1,11 +1,12 @@
 ---
-apiVersion: helm.fluxcd.io/v1
+apiVersion: flux.weave.works/v1beta1
 kind: HelmRelease
 metadata:
   name: gateway-test
   namespace: test
   annotations:
-    fluxcd.io/automated: "true"
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.container: semver:*
 spec:
   releaseName: gateway-test
   forceUpgrade: true
@@ -29,7 +30,7 @@ spec:
       image: docker.brcmlabs.com/gateway-test
       tag: '7'
     imageCredentials:
-      name: "docker-registry"
+      name: "docker-cicd"
       registry: "docker.brcmlabs.com"
       username: "gv666792"
     hazelcast:
