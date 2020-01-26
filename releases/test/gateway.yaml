@@ -1,12 +1,11 @@
 ---
-apiVersion: flux.weave.works/v1beta1
+apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: gateway-test
   namespace: test
   annotations:
-    flux.weave.works/automated: "true"
-    flux.weave.works/tag.container: semver:*
+    fluxcd.io/automated: "true"
 spec:
   releaseName: gateway-test
   forceUpgrade: true
