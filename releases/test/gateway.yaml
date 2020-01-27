@@ -7,6 +7,7 @@ metadata:
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:*
+    fluxcd.io/tag.container: semver:*
 spec:
   releaseName: gateway-test
   forceUpgrade: true
