@@ -29,7 +29,7 @@ spec:
     replicaCount: 1
     container:
       image: docker.brcmlabs.com/gateway-test
-      tag: '7'
+      tag: '8'
     imageCredentials:
       name: "docker-cicd"
       registry: "docker.brcmlabs.com"
