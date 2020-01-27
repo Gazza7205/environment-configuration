@@ -11,7 +11,7 @@ spec:
   releaseName: gateway-test
   forceUpgrade: true
   chart:
-    git: git@github.com/CAAPIM/gateway-helm-charts.git
+    git: git@github.com:CAAPIM/gateway-helm-charts.git
     path: charts/gateway
     ref: master
   valuesFrom:
