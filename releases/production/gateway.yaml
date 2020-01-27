@@ -1,0 +1,46 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: gateway-production
+  namespace: production
+  annotations:
+    fluxcd.io/automated: "true"
+    filter.fluxcd.io/chart-image: semver:*
+spec:
+  releaseName: gateway-production
+  forceUpgrade: true
+  chart:
+    git: git@github.com/gazza7205/gateway-helm-charts.git
+    path: charts/gateway
+    ref: master
+  valuesFrom:
+  - secretKeyRef:
+      name: image-creds
+      key: image-creds.yaml
+  - secretKeyRef:
+      name: gateway-license
+      key: license.yaml
+  - secretKeyRef:
+      name: env
+      key: env.yaml
+  values:
+    replicaCount: 1
+    container:
+      image: docker.brcmlabs.com/gateway-production
+      tag: '7'
+    imageCredentials:
+      name: "docker-cicd"
+      registry: "docker.brcmlabs.com"
+      username: "gv666792"
+    hazelcast:
+      enabled: false
+    service:
+      type: ClusterIP
+      ports:
+      - name: http
+        internal: 8080
+        external: 80
+      - name: https
+        internal: 8443
+        external: 443
