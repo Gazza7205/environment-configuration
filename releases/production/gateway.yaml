@@ -25,16 +25,16 @@ spec:
       name: env
       key: env.yaml
   values:
-    replicaCount: 1
+    replicaCount: 2
     container:
       image: docker.brcmlabs.com/gateway-production
-      tag: '7'
+      tag: '1'
     imageCredentials:
       name: "docker-cicd"
       registry: "docker.brcmlabs.com"
       username: "gv666792"
     hazelcast:
-      enabled: false
+      enabled: true
     service:
       type: ClusterIP
       ports:
