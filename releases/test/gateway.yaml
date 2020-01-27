@@ -6,7 +6,8 @@ metadata:
   namespace: test
   annotations:
     fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: semver:~*
+    filter.fluxcd.io/chart-image: semver:*
+    fluxcd.io/tag.container: semver:*
 spec:
   releaseName: gateway-test
   forceUpgrade: true
@@ -28,7 +29,7 @@ spec:
     replicaCount: 1
     container:
       image: docker.brcmlabs.com/gateway-test
-      tag: '7'
+      tag: '9'
     imageCredentials:
       name: "docker-cicd"
       registry: "docker.brcmlabs.com"
