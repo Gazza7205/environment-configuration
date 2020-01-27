@@ -1,0 +1,1 @@
+{"jobID":"75f434ae-927f-ee89-090c-6f9b68553fb7","spec":{"type":"policy","cause":{"Message":"","User":"Gary Vermeulen \u003cgary.vermeulen@broadcom.com\u003e"},"spec":{"test:helmrelease/gateway-test":{"add":{"tag_all":"semver:*"},"remove":{}}}},"result":null}
